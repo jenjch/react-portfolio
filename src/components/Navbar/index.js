@@ -1,7 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 // import "./style.css";
-import Resume from "../assets/images/jane-doe-resume.pdf";
+// import Resume from "../assets/images/jane-doe-resume.pdf";
 
 // onResumeClick() {
 //     window.open(Resume);
@@ -39,12 +39,12 @@ function Navbar() {
             Contact
           </NavLink>
         </li>
-        <li
+        <a
           className="flex-sm-fill text-sm-center nav-link resume"
-        //   href={require("../assets/images/jane-doe-resume.pdf")}
+          href={require("../assets/images/jane-doe-resume.pdf")}
         //   onClick={() => window.open("../assets/images/jane-doe-resume.pdf")}
         //   href={Resume}
-        onClick={() => window.open(Resume)}
+        // onClick={() => window.open(Resume)}
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -55,11 +55,11 @@ function Navbar() {
             width="28"
             className="resume"
           />
-        </li>
-        <li
+        </a>
+        <a
           className="flex-sm-fill text-sm-center nav-link"
-        //   href="https://github.com/jenjch/"
-        onClick={() => window.open("https://github.com/jenjch/")}
+          href="https://github.com/jenjch/"
+        // onClick={() => window.open("https://github.com/jenjch/")}
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -70,11 +70,11 @@ function Navbar() {
             width="25"
             className="github"
           />
-        </li>
-        <li
+        </a>
+        <a
           className="flex-sm-fill text-sm-center nav-link"
-        //   href="https://www.linkedin.com/"
-        onClick={() => window.open("https://www.linkedin.com/")}
+          href="https://www.linkedin.com/"
+        // onClick={() => window.open("https://www.linkedin.com/")}
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -85,7 +85,7 @@ function Navbar() {
             width="29"
             className="linkedin"
           />
-        </li>
+        </a>
     </nav>
   );
 }

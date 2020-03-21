@@ -17,8 +17,7 @@ function App() {
             <h1 class="rounded col-sm-12 col-lg-3">Jen Chen</h1>
             <Navbar/>
             {/* use switch if you want to add "*" path */}
-              <Route exact path="/" component={About} />
-              <Route exact path="/about" component={About} />
+              <Route exact path={["/", "/about"]} component={About} />
               <Route exact path="/portfolio" component={Portfolio} />
               <Route exact path="/contact" component={Contact} />    
           </Row>
