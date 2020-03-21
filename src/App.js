@@ -12,19 +12,17 @@ import Row from "./components/Row";
 function App() {
   return (
     <Router>
-      <Container fluid={true}>
         <Container>
           <Row>
             <h1 class="rounded col-sm-12 col-lg-3">Jen Chen</h1>
             <Navbar/>
             {/* use switch if you want to add "*" path */}
-              <Route exact path={["/", "/about"]} component={About} />
+              <Route exact path="/" component={About} />
+              <Route exact path="/about" component={About} />
               <Route exact path="/portfolio" component={Portfolio} />
-              <Route exact path="/contact" component={Contact} />
-              
+              <Route exact path="/contact" component={Contact} />    
           </Row>
         </Container>
-      </Container>
       <Footer />
     </Router>
   );

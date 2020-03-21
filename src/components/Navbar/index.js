@@ -1,6 +1,11 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 // import "./style.css";
+import Resume from "../assets/images/jane-doe-resume.pdf";
+
+// onResumeClick() {
+//     window.open(Resume);
+//   };
 
 // Depending on the current path, this component sets the "active" class on the appropriate navigation link item
 function Navbar() {
@@ -38,6 +43,8 @@ function Navbar() {
           className="flex-sm-fill text-sm-center nav-link resume"
         //   href={require("../assets/images/jane-doe-resume.pdf")}
         //   onClick={() => window.open("../assets/images/jane-doe-resume.pdf")}
+        //   href={Resume}
+        onClick={() => window.open(Resume)}
           target="_blank"
           rel="noopener noreferrer"
         >
