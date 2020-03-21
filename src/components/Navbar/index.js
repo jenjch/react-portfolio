@@ -1,88 +1,82 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import "./style.css";
+import { NavLink } from "react-router-dom";
+// import "./style.css";
 
 // Depending on the current path, this component sets the "active" class on the appropriate navigation link item
 function Navbar() {
   return (
     <nav className="nav nav-pills flex-column flex-sm-row col-sm-12 col-lg-9">
         <li className="flex-sm-fill text-sm-center">
-          <Link
+          <NavLink
+          exact
             to="/"
-            className={
-              window.location.pathname === "/" ||
-              window.location.pathname === "/about"
-                ? "nav-link active"
-                : "nav-link"
-            }
+            className="nav-link"
+            activeClassName= "nav-link active"
           >
             About
-          </Link>
+          </NavLink>
         </li>
         <li className="flex-sm-fill text-sm-center">
-          <Link
+          <NavLink
             to="/portfolio"
-            className={
-              window.location.pathname === "/portfolio"
-                ? "nav-link active"
-                : "nav-link"
-            }
+            className="nav-link"
+            activeClassName= "nav-link active"
           >
             Portfolio
-          </Link>
+          </NavLink>
         </li>
         <li className="flex-sm-fill text-sm-center">
-          <Link
+          <NavLink
             to="/contact"
-            className={
-              window.location.pathname === "/contact"
-                ? "nav-link active"
-                : "nav-link"
-            }
+            className="nav-link"
+            activeClassName= "nav-link active"
           >
             Contact
-          </Link>
+          </NavLink>
         </li>
         <li
-          class="flex-sm-fill text-sm-center nav-link resume"
-          href="../components/assets/images/jane-doe-resume.pdf"
+          className="flex-sm-fill text-sm-center nav-link resume"
+        //   href={require("../assets/images/jane-doe-resume.pdf")}
+        //   onClick={() => window.open("../assets/images/jane-doe-resume.pdf")}
           target="_blank"
           rel="noopener noreferrer"
         >
           <img
-            src="../components/assets/images/resume-color-80.png"
+            src={require("../assets/images/resume-color-80.png")}
             alt="resume"
             height="28"
             width="28"
-            class="resume"
+            className="resume"
           />
         </li>
         <li
-          class="flex-sm-fill text-sm-center nav-link"
-          href="https://github.com/jenjch/"
+          className="flex-sm-fill text-sm-center nav-link"
+        //   href="https://github.com/jenjch/"
+        onClick={() => window.open("https://github.com/jenjch/")}
           target="_blank"
           rel="noopener noreferrer"
         >
           <img
-            src="../components/assets/images/GitHub-icon.png"
+            src={require("../assets/images/GitHub-icon.png")}
             alt="GitHub"
             height="25"
             width="25"
-            class="github"
+            className="github"
           />
         </li>
         <li
-          class="flex-sm-fill text-sm-center nav-link"
-          href="https://www.linkedin.com/"
+          className="flex-sm-fill text-sm-center nav-link"
+        //   href="https://www.linkedin.com/"
+        onClick={() => window.open("https://www.linkedin.com/")}
           target="_blank"
           rel="noopener noreferrer"
         >
           <img
-            src="../components/assets/images/LI-In-Bug.png"
+            src={require("../assets/images/LI-In-Bug.png")}
             alt="Linkedin"
             height="24"
             width="29"
-            class="linkedin"
+            className="linkedin"
           />
         </li>
     </nav>

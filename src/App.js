@@ -17,14 +17,15 @@ function App() {
           <Row>
             <h1 class="rounded col-sm-12 col-lg-3">Jen Chen</h1>
             <Navbar/>
-              <Route exact path="/" component={About} />
-              <Route exact path="/about" component={About} />
+            {/* use switch if you want to add "*" path */}
+              <Route exact path={["/", "/about"]} component={About} />
               <Route exact path="/portfolio" component={Portfolio} />
               <Route exact path="/contact" component={Contact} />
+              
           </Row>
-          <Footer />
         </Container>
       </Container>
+      <Footer />
     </Router>
   );
 }
