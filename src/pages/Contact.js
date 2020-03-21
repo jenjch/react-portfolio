@@ -1,14 +1,14 @@
 import React from "react";
 import Container from "../components/Container";
 import Row from "../components/Row";
-import Col from "../components/Col";
+// import Col from "../components/Col";
 
 function ContactForm () {
 return (    
 <Container>
     <section className="content">
         <Row>
-            <Col size="md-12" ClassName="midsection">
+            <div class="col-md-12 midsection">
                 <h2>Contact</h2>
                 <form>
                     <div className="form-group">
@@ -25,7 +25,7 @@ return (
                     </div>
                     <button type="submit" className="btn btn-primary">Submit</button>
                 </form>
-            </Col>
+            </div>
         </Row>
     </section>
 </Container>

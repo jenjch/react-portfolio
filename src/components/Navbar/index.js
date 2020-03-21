@@ -6,7 +6,6 @@ import "./style.css";
 function Navbar() {
   return (
     <nav className="nav nav-pills flex-column flex-sm-row col-sm-12 col-lg-9">
-      <ul className="navbar-nav">
         <li className="flex-sm-fill text-sm-center">
           <Link
             to="/"
@@ -22,7 +21,7 @@ function Navbar() {
         </li>
         <li className="flex-sm-fill text-sm-center">
           <Link
-            to="/discover"
+            to="/portfolio"
             className={
               window.location.pathname === "/portfolio"
                 ? "nav-link active"
@@ -86,7 +85,6 @@ function Navbar() {
             class="linkedin"
           />
         </li>
-      </ul>
     </nav>
   );
 }
