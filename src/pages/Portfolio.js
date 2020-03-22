@@ -2,7 +2,7 @@ import React from "react";
 import Container from "../components/Container";
 import Row from "../components/Row";
 import Project from "../components/Projects";
-// import testimage from "thetestpath"
+// import testimage from "../thetestpath";
 
 function Portfolio() {
   return (

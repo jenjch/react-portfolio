@@ -1,11 +1,5 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-// import "./style.css";
-// import Resume from "../assets/images/jane-doe-resume.pdf";
-
-// onResumeClick() {
-//     window.open(Resume);
-//   };
 
 // Depending on the current path, this component sets the "active" class on the appropriate navigation link item
 function Navbar() {
