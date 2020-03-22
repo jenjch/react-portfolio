@@ -16,7 +16,7 @@ Now that you've worked with React and have multiple projects to share, you'll be
 
 * Updated portfolio page featuring 6 projects 
 
-* Navigation with React Router, dynamic rendering, or another third part router
+* Navigation with React Router, dynamic rendering, or another third party router
 
 * A `Footer` component that appears on multiple pages
 
