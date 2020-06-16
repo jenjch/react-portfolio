@@ -14,10 +14,17 @@ function Project(props) {
         />
         <button
           type="button"
-          className="btn btn-primary btn-lg btn-block"
-          onClick={() => window.open(props.linkURL)}
+          className="btn btn-primary btn-lg btn-block deployedBtn"
+          onClick={() => window.open(props.linkDeployed)}
         >
-          {props.name}
+          {props.name} (Deployed)
+        </button>
+        <button
+          type="button"
+          className="btn btn-primary btn-lg btn-block githubBtn"
+          onClick={() => window.open(props.linkGithub)}
+        >
+          {props.name} (Github)
         </button>
       </div>
     </Col>

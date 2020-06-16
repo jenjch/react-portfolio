@@ -113,8 +113,17 @@ h2 {
   /* margin: 20px; */
 }
 
-button[type=button] {
+.deployedBtn {
   background-color: #4aaaa5;
+  color:#ffffff;
+  font-size: 1em;
+  border: none;
+}
+
+.githubBtn {
+  background-color: rgb(43, 144, 226);
+  /* background-color: rgb(43, 137, 226); */
+  /* background-color: rgb(113, 43, 226); */
   color:#ffffff;
   font-size: 1em;
   border: none;

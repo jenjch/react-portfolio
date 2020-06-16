@@ -15,34 +15,40 @@ function Portfolio() {
               <Project
                 name="Password Generator"
                 imgPath={require("../components/assets/images/pw-generator.png")}
-                linkURL="https://jenjch.github.io/passwordGenerator/"
+                linkDeployed="https://jenjch.github.io/passwordGenerator/"
+                linkGithub="https://github.com/jenjch/passwordGenerator"
               />
               <Project
                 name="Weather Dashboard"
                 imgPath={require("../components/assets/images/weather-app.PNG")}
-                linkURL="https://jenjch.github.io/WeatherDashboard/"
+                linkDeployed="https://jenjch.github.io/WeatherDashboard/"
+                linkGithub="https://github.com/jenjch/WeatherDashboard"
               />
               <Project
                 name="Movies & Groovies"
                 imgPath={require("../components/assets/images/movie-app.PNG")}
-                linkURL="https://jenjch.github.io/GroupProject1/"
+                linkDeployed="https://jenjch.github.io/GroupProject1/"
+                linkGithub="https://github.com/jenjch/GroupProject1"
               />
             </Row>
             <Row>
               <Project
                 name="Note Taker"
                 imgPath={require("../components/assets/images/note-taker2.PNG")}
-                linkURL="https://notetaker-5123534.herokuapp.com/"
+                linkDeployed="https://notetaker-5123534.herokuapp.com/"
+                linkGithub="https://github.com/jenjch/noteTaker"
               />
               <Project
                 name="Banh Mi Log"
                 imgPath={require("../components/assets/images/banhMi2.jpg")}
-                linkURL="https://blooming-wildwood-86554.herokuapp.com/"
+                linkDeployed="https://blooming-wildwood-86554.herokuapp.com/"
+                linkGithub="https://github.com/jenjch/banhMiLog"
               />
               <Project
                 name="Podcast Collection"
                 imgPath={require("../components/assets/images/podcast-app.jpeg")}
-                linkURL="https://project2-020420.herokuapp.com/"
+                linkDeployed="https://project2-020420.herokuapp.com/"
+                linkGithub="https://github.com/jenjch/project2"
               />
             </Row>
           </div>
